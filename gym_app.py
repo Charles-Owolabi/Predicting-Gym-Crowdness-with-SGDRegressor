@@ -44,7 +44,7 @@ def train_and_save_model(path="gym_model.joblib"):
     try:
         df = pd.read_csv("crowdness_gym_data - small.csv")
     except FileNotFoundError:
-        st.error("Dataset not found. Ensure 'crowdness_gym_data.csv' is in the app directory.")
+        st.error("Dataset not found. Ensure 'crowdness_gym_data - small.csv' is in the app directory.")
         return None, None
 
     df = engineer_features(df)
