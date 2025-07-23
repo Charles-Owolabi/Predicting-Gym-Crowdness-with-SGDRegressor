@@ -65,7 +65,7 @@ def load_or_train_model(path="gym_model.joblib"):
         saved = joblib.load(path)
         return saved['model'], saved['feature_names']
     else:
-        st.info("Training model for the first time. Please wait...")
+        st.info("Powered by AI, the app transforms your input into real-time crowd predictions—so you’ll never walk into a packed gym unprepared again.")
         return train_and_save_model(path)
 
 # Load model
